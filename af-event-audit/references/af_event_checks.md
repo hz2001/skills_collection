@@ -1,0 +1,123 @@
+﻿# AF 事件文件校验说明
+
+**基础信息（从文件名解析）**
+- 文件名示例：`com.lucky.zootchi_organic-in-app-events_2026-03-10_2026-03-12_Asia_Shanghai.csv`
+- app_id：`com.lucky.zootchi`
+- report_group：`organic-in-app-events`
+- report_type：`in-app-events`（与 `organic` 属于同一组，`organic` 不是渠道）
+- start_date：`2026-03-10`
+- end_date：`2026-03-12`
+- timezone：`Asia_Shanghai`
+- app_platform 规则：`.` 分隔形式（如 `com.xxx.yyy`）为 Android
+- app_platform 规则：`id`+数字形式（如 `id1234567890`）为 iOS
+
+**常见问题排查**
+- 问题：为什么“明明上报成功”的事件不在文件里？
+- 可能原因：事件发生时间不在 `start_date` ~ `end_date` 区间内
+- 可能原因：`report_type` 不匹配，例如用户说的是 organic 事件，但文件是 `in-app-events`（无 `organic` 字段，代表非 organic）
+- 可能原因：事件时区与文件时区不一致，导致换算后落在区间外
+- 可能原因：app 终端类型不一致（Android vs iOS）
+- 问题：为什么 Install Time 为空？
+- 可能原因：未上报 install 事件
+- 可能原因：AF_id 缺失或格式错误，导致无法与 install 匹配
+- 可能原因：事件时间异常导致落在可匹配范围外（例如把客户端时间当事件时间、时区换算错误、时间戳单位写错或客户端时间不准，导致上报到很久以前或未来）
+- 问题：为什么某些事件的币种被判定异常？
+- 可能原因：在“必须为 USD 的事件列表”中的事件，若 `Event Revenue Currency` 不是 USD 会被判定异常
+- 问题：为什么商品金额被判定异常？
+- 可能原因：当币种为 USD 且 `Event Revenue` > 100 (即美金收入超过100美金)，会被判定异常；非 USD 不做金额上限校验
+- 问题：为什么 Media Source 显示为 restricted？
+- 可能原因：Meta 的 AMM 协议未同意；需检查媒体对接位置的 `advanced_data_sharing` 是否开启
+- 问题：为什么 IP 为空？
+- 可能原因：IP 一般必填；若为空会被判定异常
+- 可能原因：IP 有两种上报方式：1) Install 事件上报时，AF 自动收集；2) 若成功上报 installinfo（内部设备信息采集）接口，我们会拿到客户端发送 IP 并自动补全；若 AF 拿不到且 installinfo 接口未上报，则可能为空
+- 问题：为什么 AppsFlyer ID 不合规或找不到？
+- 可能原因：AF_id 就是 AppsFlyer ID, 此ID不能为空，不能是 cuid 格式，必须为“数字-数字”结构（如 `1773052859848-3028740892582215440`）
+- 可能原因：AF_id 在 AF SDK 启动后生成；若事件在 SDK 初始化前上报，则无法获取 AF_id
+- 可能原因：测试环境可能为了避免脏数据而不初始化 af_sdk，需要与技术确认
+- 可能原因：重装后（Install Time 变化）AF_id 会变化，导致用户或事件无法按旧 AF_id 找到
+- 问题：为什么看不到 cuid？
+- 可能原因：Customer User ID 为公司内部设备唯一标识；install 事件中为原始 cuid，in-app-events 中为加密 cuid
+- 可能原因：排查时优先使用 AF_id 或参数中的 orderid 进行比对
+- 可能原因：事件上报时必须上报 cuid；若初始化 AF SDK 时未获取到 cuid，则 AF SDK 自动上报 install 事件时可能缺少 cuid
+- 可能原因：当 install 与 cuid 无法匹配时，内部看板的 install/激活可能显示为 0，此时也可能是该原因导致
+- 问题：为什么 Android 事件被归为“其他端”？
+- 可能原因：Android 端 `Advertising ID` 为空；FB 会用该字段判断 Android/iOS，缺失会导致归为“其他”端
+- 问题：IDFA 为空是否异常？
+- 可能原因：用户未同意隐私时 IDFA 可为空，属于正常现象
+
+**字段（CSV 列）与说明**
+- Attributed Touch Type：归因触点类型（点击或展示）
+- Attributed Touch Time：归因触点发生时间
+- Install Time：安装时间
+- Event Time：事件发生时间
+- Event Name：事件名称
+- Event Value：事件参数（通常是 JSON 字符串）
+- Event Revenue：事件收入（原币种数值）
+- Event Revenue Currency：事件收入币种
+- Event Revenue USD：事件收入折算美元
+- Cost Model：成本模型（如 CPI、CPA）
+- Cost Value：成本数值
+- Cost Currency：成本币种
+- Event Source：事件来源（如 SDK/S2S）
+- Partner：渠道合作方
+- Media Source：媒体来源（渠道来源）
+- Channel：渠道分组/名称
+- Campaign：广告活动名称
+- Campaign ID：广告活动 ID
+- Adset：广告组名称
+- Adset ID：广告组 ID
+- Ad：广告素材名称
+- Ad ID：广告素材 ID
+- Ad Type：广告类型
+- Site ID：投放站点/版位 ID
+- Region：大区/区域
+- Country Code：国家代码
+- State：州/省
+- City：城市
+- Postal Code：邮编
+- DMA：指定市场区域代码
+- IP：IP 地址
+- Operator：运营商（总称）
+- Carrier：运营商（具体名称）
+- Language：设备语言
+- AppsFlyer ID：AF 设备 ID
+- Customer User ID：客户自定义用户 ID
+- Android ID：Android 设备 ID
+- Advertising ID：广告 ID（如 GAID）
+- IMEI：设备 IMEI
+- IDFA：iOS 广告 ID
+- IDFV：iOS 设备供应商 ID
+- Device Category：设备类别（如 phone/tablet）
+- Platform：平台（Android/iOS）
+- OS Version：系统版本
+- App Version：应用版本
+- SDK Version：AF SDK 版本
+- App ID：应用 ID
+- App Name：应用名称
+- Is Retargeting：是否再营销
+- Retargeting Conversion Type：再营销转化类型
+- Is Primary Attribution：是否主归因
+- Attribution Lookback：归因回溯窗口
+- Reengagement Window：再互动窗口
+- Match Type：匹配类型（归因匹配方式）
+- User Agent：User-Agent
+- HTTP Referrer：HTTP 引用页
+- Original URL：原始链接
+- Device Model：设备型号
+
+**校验规则与解释（需写入自动校验）**
+- Install Time：按用户最后一次 install 事件更新，reinstall 也算安装
+- Install Time 为空：说明该行事件未匹配到 install，需报出
+- Install Time 为空的可能原因：未上报 install 事件；AF_id 缺失或格式错误导致无法与 install 匹配；事件时间异常导致落在可匹配范围外（例如把客户端时间当事件时间、时区换算错误、时间戳单位写错或客户端时间不准，导致上报到很久以前或未来）
+- Event Revenue Currency：允许任意币种，但“必须为 USD 的事件列表”中的事件必须为 USD，非 USD 需报出
+- 必须为 USD 的事件列表：`af_pay_new`
+- Event Revenue：视为商品金额；当币种为 USD 且数值 > 100 需报出；非 USD 不做金额上限校验
+- Media Source：仅出现在非 organic 数据集中；若为 `restricted` 表示 Meta AMM 未同意，需检查媒体对接的 `advanced_data_sharing` 是否开启
+- IP：一般必填；为空需报出
+- AppsFlyer ID：不能为空；不能是 cuid 格式；必须为“数字-数字”结构（如 `1773052859848-3028740892582215440`）；重装后（Install Time 变化）AF_id 会变化，若有人找不到事件可提醒此原因
+- Customer User ID：公司内部设备唯一标识；install 事件中为原始 cuid，in-app-events 中为加密 cuid；若用户问看不到 cuid，提示使用 AF_id/参数中的 orderid 比对
+- Advertising ID：通过 InstallInfo 接口统一收集并在事件上报时补充；Android 必须上报，若为空需报出；FB 会用该字段判定 Android/iOS，缺失会导致事件归为“其他”端
+- IDFA：用户同意隐私才可获取，允许为空
+- IDFV：iOS 端一般可获取，若为空需报出
+- 验收报告指标：统计“未上报 IDFA，但上报了 IDFV 且上报了 IP”的用户数量（用于 FB 判断可投放比例，通常 >20% 为合格）
+- 其他字段：暂不做校验

@@ -1,0 +1,2 @@
+﻿# Requirements for AF Event Audit skill
+# Python standard library only

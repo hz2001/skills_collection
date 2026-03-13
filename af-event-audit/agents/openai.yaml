@@ -1,0 +1,4 @@
+interface:
+  display_name: "AF Event Audit"
+  short_description: "Audit AppsFlyer event CSVs using local rules"
+  default_prompt: "Read event_eval/af_event_checks.md, run event_eval/af_event_eval.py on the target CSV, then report only the issues found with concise diagnostics."
