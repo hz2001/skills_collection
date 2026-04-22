@@ -1,0 +1,671 @@
+[
+  {
+    "internal_id": 8,
+    "full_name": "M.AI",
+    "slug": "mybot",
+    "abbr": "-",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6636481467"
+    }
+  },
+  {
+    "internal_id": 33,
+    "full_name": "Pooca",
+    "slug": "poocaapp",
+    "abbr": "CA",
+    "category": "主包",
+    "platform": "Android,IOS",
+    "af_app_id": {
+      "android": "ai.social.pooca",
+      "ios": "id6753788330"
+    }
+  },
+  {
+    "internal_id": 32,
+    "full_name": "Boothus",
+    "slug": "boothus",
+    "abbr": "CB",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6752974544"
+    }
+  },
+  {
+    "internal_id": 11,
+    "full_name": "Crushie.AI",
+    "slug": "crushieai",
+    "abbr": "CC",
+    "category": "主包",
+    "platform": "Android,IOS",
+    "af_app_id": {
+      "android": "ai.onspace.app",
+      "ios": "id6741790631"
+    }
+  },
+  {
+    "internal_id": 59,
+    "full_name": "Dootchi",
+    "slug": "dootchi",
+    "abbr": "CO",
+    "category": "主包",
+    "platform": "Android,IOS",
+    "af_app_id": {
+      "android": "com.lucky.zootchi",
+      "ios": "id6757463780"
+    }
+  },
+  {
+    "internal_id": 2,
+    "full_name": "Poly.AI",
+    "slug": "polyai",
+    "abbr": "CP",
+    "category": "主包",
+    "platform": "Android,IOS",
+    "af_app_id": {
+      "android": "ai.socialapps.speakmaster",
+      "ios": "id6449190344"
+    }
+  },
+  {
+    "internal_id": 10,
+    "full_name": "Soultalk",
+    "slug": "soultalk",
+    "abbr": "CS",
+    "category": "主包",
+    "platform": "Android,IOS",
+    "af_app_id": {
+      "android": "com.aipartner.soulchat",
+      "ios": "id6504914846"
+    }
+  },
+  {
+    "internal_id": 37,
+    "full_name": "ColorHub",
+    "slug": "colorhub",
+    "abbr": "DC",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6754601054"
+    }
+  },
+  {
+    "internal_id": 31,
+    "full_name": "Glam",
+    "slug": "glam",
+    "abbr": "DG",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6753892757"
+    }
+  },
+  {
+    "internal_id": 17,
+    "full_name": "AI Home",
+    "slug": "ahapp",
+    "abbr": "DH",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6747693572"
+    }
+  },
+  {
+    "internal_id": 18,
+    "full_name": "AIHomeDesign",
+    "slug": "ahdapp",
+    "abbr": "DHD",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6747573750"
+    }
+  },
+  {
+    "internal_id": 24,
+    "full_name": "DoseMate",
+    "slug": "dosemate",
+    "abbr": "DM",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6749880636"
+    }
+  },
+  {
+    "internal_id": 20,
+    "full_name": "AITattoo",
+    "slug": "tatapp",
+    "abbr": "DT",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6747999903"
+    }
+  },
+  {
+    "internal_id": 68,
+    "full_name": "LingoAI",
+    "slug": "lingoai",
+    "abbr": "EA",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6760573569"
+    }
+  },
+  {
+    "internal_id": 26,
+    "full_name": "Guardian",
+    "slug": "guardian",
+    "abbr": "EH",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6752565442"
+    }
+  },
+  {
+    "internal_id": 44,
+    "full_name": "IQBoost",
+    "slug": "iqboost",
+    "abbr": "EI",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6755378185"
+    }
+  },
+  {
+    "internal_id": 62,
+    "full_name": "IQpulse",
+    "slug": "iqpulse",
+    "abbr": "EI2",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6757429397"
+    }
+  },
+  {
+    "internal_id": 67,
+    "full_name": "Spark",
+    "slug": "talentspark",
+    "abbr": "EI3",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6759893623"
+    }
+  },
+  {
+    "internal_id": 13,
+    "full_name": "LangLearn",
+    "slug": "langlearn",
+    "abbr": "EL",
+    "category": "主包",
+    "platform": "Android,IOS",
+    "af_app_id": {
+      "android": "com.langlearn.speak",
+      "ios": "id6744358897"
+    }
+  },
+  {
+    "internal_id": 27,
+    "full_name": "Speakup",
+    "slug": "speakup",
+    "abbr": "EL2",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6752457062"
+    }
+  },
+  {
+    "internal_id": 29,
+    "full_name": "SpanishUp",
+    "slug": "spanishup",
+    "abbr": "EL3",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6752892931"
+    }
+  },
+  {
+    "internal_id": 60,
+    "full_name": "RealSpeak",
+    "slug": "realspeak",
+    "abbr": "EL4",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6757069032"
+    }
+  },
+  {
+    "internal_id": 35,
+    "full_name": "Talkify",
+    "slug": "talkifyaiapp",
+    "abbr": "ELX",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6754161070"
+    }
+  },
+  {
+    "internal_id": 6,
+    "full_name": "Notro",
+    "slug": "easynote",
+    "abbr": "EN",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6504708441"
+    }
+  },
+  {
+    "internal_id": 66,
+    "full_name": "Pinu",
+    "slug": "pingo",
+    "abbr": "EP",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6758291757"
+    }
+  },
+  {
+    "internal_id": 1,
+    "full_name": "Question.AI",
+    "slug": "questionai",
+    "abbr": "EQ",
+    "category": "主包",
+    "platform": "Android,IOS",
+    "af_app_id": {
+      "android": "com.qianfan.aihomework",
+      "ios": "id6449486871"
+    }
+  },
+  {
+    "internal_id": 14,
+    "full_name": "ScanWords",
+    "slug": "scanwords",
+    "abbr": "ES",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6746407400"
+    }
+  },
+  {
+    "internal_id": 12,
+    "full_name": "WizardAI",
+    "slug": "wizardai",
+    "abbr": "EW",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6742088281"
+    }
+  },
+  {
+    "internal_id": 5,
+    "full_name": "QuizAI",
+    "slug": "quizai",
+    "abbr": "EZ",
+    "category": "主包",
+    "platform": "Android,IOS",
+    "af_app_id": {
+      "android": "com.jinpeng.quizai",
+      "ios": "id6479678271"
+    }
+  },
+  {
+    "internal_id": 61,
+    "full_name": "LuvieMe",
+    "slug": "luvieme",
+    "abbr": "GL",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6757358014"
+    }
+  },
+  {
+    "internal_id": 9,
+    "full_name": "CozyFit",
+    "slug": "cozyfit",
+    "abbr": "HC",
+    "category": "测试包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6737597315"
+    }
+  },
+  {
+    "internal_id": 22,
+    "full_name": "Starela",
+    "slug": "lsapp",
+    "abbr": "LS",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6748548097"
+    }
+  },
+  {
+    "internal_id": 34,
+    "full_name": "ChatHub AI",
+    "slug": "chathub",
+    "abbr": "PC",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6754240438"
+    }
+  },
+  {
+    "internal_id": 58,
+    "full_name": "PlantDocAI",
+    "slug": "plantdocai",
+    "abbr": "PD1",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6756903568"
+    }
+  },
+  {
+    "internal_id": 15,
+    "full_name": "GardenAI",
+    "slug": "landscape",
+    "abbr": "PL",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6747119850"
+    }
+  },
+  {
+    "internal_id": 7,
+    "full_name": "Plant.AI",
+    "slug": "plant",
+    "abbr": "PP",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6505012222"
+    }
+  },
+  {
+    "internal_id": 46,
+    "full_name": "ListenPal",
+    "slug": "listenpal",
+    "abbr": "PT",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6755165903"
+    }
+  },
+  {
+    "internal_id": 45,
+    "full_name": "AICoinScan",
+    "slug": "coinsnap",
+    "abbr": "RC",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6754443808"
+    }
+  },
+  {
+    "internal_id": 21,
+    "full_name": "HeyCam",
+    "slug": "heycam",
+    "abbr": "TC",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6747968008"
+    }
+  },
+  {
+    "internal_id": 38,
+    "full_name": "LumaAI",
+    "slug": "lumaai",
+    "abbr": "TC1",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6754621984"
+    }
+  },
+  {
+    "internal_id": 39,
+    "full_name": "MiraAI",
+    "slug": "mira",
+    "abbr": "TC2",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6754629561"
+    }
+  },
+  {
+    "internal_id": 40,
+    "full_name": "OrisAI",
+    "slug": "orisai",
+    "abbr": "TC3",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6754695017"
+    }
+  },
+  {
+    "internal_id": 41,
+    "full_name": "CleanMyPhotos",
+    "slug": "cleanmyphotos",
+    "abbr": "TC4",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6754624037"
+    }
+  },
+  {
+    "internal_id": 42,
+    "full_name": "PicteraAI",
+    "slug": "picteraai",
+    "abbr": "TC5",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id1234567890"
+    }
+  },
+  {
+    "internal_id": 25,
+    "full_name": "AICleanKit",
+    "slug": "cleankit",
+    "abbr": "TK",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6751531813"
+    }
+  },
+  {
+    "internal_id": 43,
+    "full_name": "VisentaAI",
+    "slug": "visenta",
+    "abbr": "TN1",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6755063086"
+    }
+  },
+  {
+    "internal_id": 57,
+    "full_name": "iCleanerGuru",
+    "slug": "icleanerguru",
+    "abbr": "TN10",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6754313998"
+    }
+  },
+  {
+    "internal_id": 55,
+    "full_name": "MediaClean",
+    "slug": "mediaclean",
+    "abbr": "TN11",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6756157273"
+    }
+  },
+  {
+    "internal_id": 47,
+    "full_name": "Duster",
+    "slug": "duster",
+    "abbr": "TN2",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6747413450"
+    }
+  },
+  {
+    "internal_id": 48,
+    "full_name": "CleanMyStorage.AlCleanup",
+    "slug": "vawoe",
+    "abbr": "TN3",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6755568940"
+    }
+  },
+  {
+    "internal_id": 49,
+    "full_name": "ByePhotos",
+    "slug": "byephotos",
+    "abbr": "TN4",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6755513496"
+    }
+  },
+  {
+    "internal_id": 51,
+    "full_name": "PhoneCleanerCleanUpiPhone",
+    "slug": "pccleanupiphone",
+    "abbr": "TN5",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6751339173"
+    }
+  },
+  {
+    "internal_id": 52,
+    "full_name": "SwipeGalleryPhotoCleaner",
+    "slug": "swipegallery",
+    "abbr": "TN6",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6479558851"
+    }
+  },
+  {
+    "internal_id": 53,
+    "full_name": "SnipSwipe",
+    "slug": "snipswipe",
+    "abbr": "TN7",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6748126591"
+    }
+  },
+  {
+    "internal_id": 54,
+    "full_name": "PhoneCleanerCleanstorage",
+    "slug": "pccleanstorage",
+    "abbr": "TN8",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6753857744"
+    }
+  },
+  {
+    "internal_id": 56,
+    "full_name": "Swipelt",
+    "slug": "swipelt",
+    "abbr": "TN9",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6746517809"
+    }
+  },
+  {
+    "internal_id": 19,
+    "full_name": "OnSpace.AI",
+    "slug": "onspaceaiapp",
+    "abbr": "TO",
+    "category": "主包",
+    "platform": "Android,IOS",
+    "af_app_id": {
+      "android": "app.onspace.ai",
+      "ios": "id6746471538"
+    }
+  },
+  {
+    "internal_id": 28,
+    "full_name": "DramaNow",
+    "slug": "dramashorts",
+    "abbr": "VD",
+    "category": "主包",
+    "platform": "Android",
+    "af_app_id": {
+      "android": "com.freedrama.app"
+    }
+  },
+  {
+    "internal_id": 36,
+    "full_name": "RapidDrama",
+    "slug": "rapiddrama",
+    "abbr": "VR",
+    "category": "主包",
+    "platform": "Android",
+    "af_app_id": {
+      "android": "com.free.dramarapid"
+    }
+  },
+  {
+    "internal_id": 30,
+    "full_name": "SoraGenAi",
+    "slug": "soraapp",
+    "abbr": "VS",
+    "category": "主包",
+    "platform": "IOS",
+    "af_app_id": {
+      "ios": "id6753619957"
+    }
+  }
+]
